@@ -173,14 +173,14 @@ module tb_axi4_lite_master ();
     initial begin
         ACLK    = 0;
         ARESETn = 0;
-        AWREADY = 1'b0;  // 추가!
-        WREADY  = 1'b0;  // 추가!
-        BVALID  = 1'b0;  // 추가!
-        BRESP   = 2'b00;  // 추가!
-        ARREADY = 1'b0;  // 추가!
-        RVALID  = 1'b0;  // 추가!
-        RDATA   = 32'b0;  // 추가!
-        RRESP   = 2'b00;  // 추가!
+        AWREADY = 1'b0;  
+        WREADY  = 1'b0;  
+        BVALID  = 1'b0;  
+        BRESP   = 2'b00;  
+        ARREADY = 1'b0;  
+        RVALID  = 1'b0;  
+        RDATA   = 32'b0; 
+        RRESP   = 2'b00;  
         repeat (3) @(posedge ACLK);
         ARESETn = 1;
         repeat (3) @(posedge ACLK);

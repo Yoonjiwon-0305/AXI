@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Apr 21 16:43:57 2026" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Tue Apr 21 16:50:14 2026" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "9ec2137b-f769-4506-96b4-d4625a542346" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "cd9be20b1d8149d1a123ab0c29387470" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "74" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "78" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "12th Gen Intel(R) Core(TM) i7-1260P" -context "user_environment"
@@ -37,7 +37,7 @@ webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "52" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "3" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "0.69_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "63260_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 190900480 -regid "" -xml D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "0.62_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "63196_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 4015242095 -regid "" -xml D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
