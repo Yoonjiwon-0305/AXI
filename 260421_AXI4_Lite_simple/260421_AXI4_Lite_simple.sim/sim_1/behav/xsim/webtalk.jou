@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 21 15:36:50 2026
+# Process ID: 5836
+# Current directory: D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/workplace/AXI/260421_AXI4_Lite_simple/260421_AXI4_Lite_simple.sim/sim_1/behav/xsim/xsim.dir/tb_axi4_lite_master_behav/webtalk/xsim_webtalk.tcl -notrace

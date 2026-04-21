@@ -207,7 +207,6 @@ module axi4_lite_master (
         r_state_next = r_state;
         RREADY       = 1'b0;
         r_ready      = 1'b0;
-        rdata        = 0;
         case (r_state)
             R_IDLE: begin
                 RREADY = 1'b0;
