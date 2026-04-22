@@ -39,10 +39,12 @@ module tb_axi4_lite_master ();
     axi4_lite_master dut (.*);
 
     always #5 ACLK = ~ACLK;
+
     bit [31:0] slave_addr;
     bit slv_addr_flag;
+
     // AW channel
-    task axi_slave_write_aw();
+    task automatic axi_slave_write_aw();
         forever begin
             @(posedge ACLK);
             if (AWVALID & !AWREADY) begin
@@ -59,7 +61,7 @@ module tb_axi4_lite_master ();
         end
     endtask
     // W channel
-    task axi_slave_write_w();
+    task automatic axi_slave_write_w();
         forever begin
             @(posedge ACLK);
             if (WVALID & !WREADY) begin
@@ -91,7 +93,7 @@ module tb_axi4_lite_master ();
     endtask
 
     // B channel
-    task axi_slave_write_b();
+    task automatic axi_slave_write_b();
         forever begin
             @(posedge ACLK);
             if (WVALID) begin
@@ -107,7 +109,7 @@ module tb_axi4_lite_master ();
     endtask
 
     // AR channel
-    task axi_slave_write_ar();
+    task automatic axi_slave_read_ar();
         forever begin
             @(posedge ACLK);
             if (ARVALID & !ARREADY) begin
@@ -117,6 +119,7 @@ module tb_axi4_lite_master ();
                 $display("[%0t] SLAVE READ ADDR = @%0h", $time, slave_addr);
             end else if (ARVALID & ARREADY) begin
                 ARREADY = 1'b0;
+                slv_addr_flag = 1;
             end else begin
                 ARREADY       = 1'b0;
                 slv_addr_flag = 0;
@@ -125,11 +128,11 @@ module tb_axi4_lite_master ();
     endtask
 
     // R channel
-    task axi_slave_write_r();
+    task automatic axi_slave_read_r();
         forever begin
             @(posedge ACLK);
-            if (!RVALID) begin
-                @(posedge slv_addr_flag);  // flag가 올라오는 순간 감지!
+            if (!RVALID & ARVALID) begin
+                wait (slv_addr_flag);
                 case (slave_addr[3:2])
                     2'h0: RDATA = slv_reg0;
                     2'h1: RDATA = slv_reg1;
@@ -142,12 +145,16 @@ module tb_axi4_lite_master ();
                          slave_addr, RDATA);
             end else if (RVALID & RREADY) begin
                 RVALID = 1'b0;
+                RRESP  = 2'b00;
+            end else begin
+                RVALID = 1'b0;
+                RRESP  = 2'b00;
             end
         end
     endtask
 
     //cpu 역할을 하는 write , read task 
-    task axi_write(logic [31:0] address, logic [31:0] data);
+    task automatic axi_write(logic [31:0] address, logic [31:0] data);
         addr     <= address;
         wdata    <= data;
         write    <= 1'b1;
@@ -159,7 +166,7 @@ module tb_axi4_lite_master ();
                  wdata);
     endtask
 
-    task axi_read(logic [31:0] address);
+    task automatic axi_read(logic [31:0] address);
         addr     <= address;
         write    <= 1'b0;
         transfer <= 1'b1;
@@ -173,14 +180,6 @@ module tb_axi4_lite_master ();
     initial begin
         ACLK    = 0;
         ARESETn = 0;
-        AWREADY = 1'b0;  
-        WREADY  = 1'b0;  
-        BVALID  = 1'b0;  
-        BRESP   = 2'b00;  
-        ARREADY = 1'b0;  
-        RVALID  = 1'b0;  
-        RDATA   = 32'b0; 
-        RRESP   = 2'b00;  
         repeat (3) @(posedge ACLK);
         ARESETn = 1;
         repeat (3) @(posedge ACLK);
@@ -189,8 +188,8 @@ module tb_axi4_lite_master ();
             axi_slave_write_aw();
             axi_slave_write_w();
             axi_slave_write_b();
-            axi_slave_write_ar();
-            axi_slave_write_r();
+            axi_slave_read_ar();
+            axi_slave_read_r();
         join_none
         repeat (3) @(posedge ACLK);
         axi_write(32'h00000000, 32'h11111111);

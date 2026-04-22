@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+#define GPIOA_CR  (0x44A00000 + 0x00)
+#define GPIOA_IDR (0x44A00000 + 0x04)
+#define GPIOA_ODR (0x44A00000 + 0x08)
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application\n\r");
+
+    (uint32_t *)GPIO_CR = 0xff;
+
+    cleanup_platform();
+    return 0;
+}
