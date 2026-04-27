@@ -48,6 +48,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_GP
 # IP: bd/design_1/ip/design_1_GPIO_1_0/design_1_GPIO_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_GPIO_1_0 || ORIG_REF_NAME==design_1_GPIO_1_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_GPIO_2_0/design_1_GPIO_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_GPIO_2_0 || ORIG_REF_NAME==design_1_GPIO_2_0} -quiet] -quiet
+
 # XDC: d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_microblaze_0_0 || ORIG_REF_NAME==design_1_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 

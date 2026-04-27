@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Apr 22 14:35:35 2026
-# Process ID: 20824
+# Start of session at: Mon Apr 27 09:44:19 2026
+# Process ID: 19752
 # Current directory: D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/design_1_wrapper.vds
@@ -20,30 +20,32 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10980
+INFO: [Synth 8-7075] Helper process launched with PID 452
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1105.012 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1108.871 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1_GPIO_0_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'GPIO_v1_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'GPIO_v1_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'GPIO_v1_0_S00_AXI' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'GPIO_v1_0_S00_AXI' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0_S00_AXI.v:206]
-INFO: [Synth 8-226] default block is never used [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0_S00_AXI.v:344]
-INFO: [Synth 8-6155] done synthesizing module 'GPIO_v1_0_S00_AXI' (1#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'GPIO' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0.v:92]
-INFO: [Synth 8-6155] done synthesizing module 'GPIO' (2#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0.v:92]
-INFO: [Synth 8-6155] done synthesizing module 'GPIO_v1_0' (3#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/4961/hdl/GPIO_v1_0.v:4]
+INFO: [Synth 8-226] default block is never used [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0_S00_AXI.v:206]
+INFO: [Synth 8-226] default block is never used [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0_S00_AXI.v:344]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO_v1_0_S00_AXI' (1#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'GPIO' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO' (2#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO_v1_0' (3#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_GPIO_0_0' (4#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'design_1_GPIO_1_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_GPIO_1_0' (5#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_GPIO_2_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_2_0/synth/design_1_GPIO_2_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_GPIO_2_0' (6#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_2_0/synth/design_1_GPIO_2_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
@@ -72,7 +74,7 @@ INFO: [Synth 8-638] synthesizing module 'uartlite_core' [d:/workplace/AXI/260422
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'baudrate' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
 	Parameter C_RATIO bound to: 651 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'baudrate' (6#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (7#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
 INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
@@ -97,7 +99,7 @@ INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_o
 INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (7#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (8#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
@@ -109,22 +111,22 @@ INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [d:/workplace/AXI/26042
 INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
 	Parameter C_SIZE bound to: 5 - type: integer 
 	Parameter C_FAMILY bound to: artix7 - type: string 
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (8#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (9#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
 INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_FAMILY bound to: artix7 - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (9#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (10#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (11#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (12#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (10#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (11#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (12#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (13#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
 INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (13#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
-INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (14#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (14#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (15#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
 INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -154,33 +156,33 @@ INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/workplace/AXI/260422_AXI
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b00 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (15#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (16#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b01 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (15#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (16#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b10 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (15#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (16#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b11 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (15#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (16#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (16#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (17#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
 INFO: [Synth 8-226] default block is never used [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (17#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (18#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (19#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_0' (20#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:192]
-WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:192]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (18#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (19#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (20#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_0' (21#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:237]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:237]
 INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70]
 INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
@@ -189,7 +191,7 @@ INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUF' (21#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (22#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
@@ -239,11 +241,11 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/s
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (22#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (23#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (23#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' (24#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (25#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (24#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' (25#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (26#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70]
 INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_REVISION bound to: (null) - type: string 
@@ -324,7 +326,7 @@ INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [d:/workplace/AXI/260422_AX
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
 INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:355]
-INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (26#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:345]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (27#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:345]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter INIT bound to: 2'b10 
 INFO: [Synth 8-3491] module 'MB_LUT1' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1469' bound to instance 'LUT1_I' of component 'MB_LUT1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:15923]
@@ -333,13 +335,13 @@ INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_LUT1' [d:/workplace/AXI/
 	Parameter INIT bound to: 2'b10 
 	Parameter INIT bound to: 2'b10 
 INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1505]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_LUT1' (27#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1483]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_LUT1' (28#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1483]
 	Parameter C_TARGET bound to: 2 - type: integer 
 INFO: [Synth 8-3491] module 'MB_BUFG' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:383' bound to instance 'BUFG_DRCK' of component 'MB_BUFG' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:16391]
 INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:396]
 	Parameter C_TARGET bound to: 2 - type: integer 
 INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFG' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:406]
-INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (28#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:396]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (29#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:396]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -402,7 +404,7 @@ INFO: [Synth 8-638] synthesizing module 'MDM_Core' [d:/workplace/AXI/260422_AXI_
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
 INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'config_scan_reset_i' of component 'xil_scan_reset_control' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7654]
 INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_xil_scan_reset_control' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:306]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_xil_scan_reset_control' (29#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_xil_scan_reset_control' (30#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:306]
 INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'sel_n_reset_i' of component 'xil_scan_reset_control' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7664]
 INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'shift_n_reset_i' of component 'xil_scan_reset_control' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7674]
 	Parameter C_TARGET bound to: 2 - type: integer 
@@ -451,7 +453,7 @@ INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [d:/workplace/AXI/260422_AXI_
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:719]
-INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (30#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:698]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (31#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:698]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:741' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3674]
@@ -460,7 +462,7 @@ INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [d:/workplace/AXI/260422_AXI
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:781]
-INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (31#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (32#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:758]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
@@ -474,7 +476,7 @@ INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E' [d:/workplace/AX
 	Parameter INIT bound to: 16'b0000000101100111 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E' (32#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E' (33#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
@@ -488,7 +490,7 @@ INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized0' 
 	Parameter INIT bound to: 16'b0100001010000111 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized0' (32#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized0' (33#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
@@ -502,7 +504,7 @@ INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized1' 
 	Parameter INIT bound to: 16'b0100010001000011 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized1' (32#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized1' (33#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
@@ -516,11 +518,11 @@ INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized2' 
 	Parameter INIT bound to: 16'b0101100001001101 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
-INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized2' (32#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
-INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (33#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3290]
-INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (34#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:6971]
-INFO: [Synth 8-256] done synthesizing module 'MDM' (35#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:14299]
-INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (36#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized2' (33#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (34#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3290]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (35#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:6971]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (36#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:14299]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (37#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
 	Parameter C_SCO bound to: 0 - type: integer 
 	Parameter C_FREQ bound to: 100000000 - type: integer 
@@ -691,30 +693,32 @@ INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [d:/workplace/
 	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/9285/hdl/microblaze_v11_0_vh_rfs.vhd:164117' bound to instance 'U0' of component 'MicroBlaze' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:810]
-INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (88#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
-WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:232]
-WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_0' has 52 connections declared, but only 51 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:232]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:402]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1012]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (89#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1012]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1144]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (90#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1144]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1290]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (91#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1290]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1670]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (92#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1670]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (89#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:277]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_0' has 52 connections declared, but only 51 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:277]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:468]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1220]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (90#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1220]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (91#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (92#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1644]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (93#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1644]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:2024]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (94#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:2024]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 4 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100010010100001000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000000000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 96'b000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 256'b0000000000000000000000000000000001000100101000100000000000000000000000000000000000000000000000000100010010100001000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 128'b00000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -723,16 +727,16 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [d:
 	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 128'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 128'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
 	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
 	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 128'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 128'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
 	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
 	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -742,28 +746,28 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [d:
 	Parameter P_AXILITE bound to: 2 - type: integer 
 	Parameter P_AXILITE_SIZE bound to: 3'b010 
 	Parameter P_INCR bound to: 2'b01 
-	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
-	Parameter P_M_AXI_SUPPORTS_READ bound to: 3'b111 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 4'b1111 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 4'b1111 
 	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
 	Parameter C_DEBUG bound to: 1 - type: integer 
 	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
-	Parameter P_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_M_AXI_ERR_MODE bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: artix7 - type: string 
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 4 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100010010100001000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000000000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100010010100001111111111111111100000000000000000000000000000000010001001010000011111111111111110000000000000000000000000000000001000000011000001111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 256'b0000000000000000000000000000000001000100101000100000000000000000000000000000000000000000000000000100010010100001000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 256'b0000000000000000000000000000000001000100101000101111111111111111000000000000000000000000000000000100010010100001111111111111111100000000000000000000000000000000010001001010000011111111111111110000000000000000000000000000000001000000011000001111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -774,11 +778,11 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [d
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
-	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
-	Parameter C_M_AXI_SUPPORTS_READ bound to: 3'b111 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 4'b1111 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 4'b1111 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
@@ -786,9 +790,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [d
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE bound to: 4 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 5 - type: integer 
 	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 2 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 3 - type: integer 
 	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
 	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
 	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
@@ -798,8 +802,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [d
 	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
 	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
 	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
-	Parameter P_M_SECURE_MASK bound to: 3'b000 
-	Parameter P_M_AXILITE_MASK bound to: 3'b000 
+	Parameter P_M_SECURE_MASK bound to: 4'b0000 
+	Parameter P_M_AXILITE_MASK bound to: 4'b0000 
 	Parameter P_FIXED bound to: 2'b00 
 	Parameter P_BYPASS bound to: 0 - type: integer 
 	Parameter P_LIGHTWT bound to: 7 - type: integer 
@@ -808,16 +812,16 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [d
 	Parameter P_DECERR bound to: 2'b11 
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: artix7 - type: string 
-	Parameter C_NUM_TARGETS bound to: 3 - type: integer 
+	Parameter C_NUM_TARGETS bound to: 4 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 2 - type: integer 
 	Parameter C_NUM_RANGES bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000000100010010100001000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000000000000000000000 
-	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100010010100001111111111111111100000000000000000000000000000000010001001010000011111111111111110000000000000000000000000000000001000000011000001111111111111111 
-	Parameter C_TARGET_QUAL bound to: 4'b0111 
+	Parameter C_BASE_ADDR bound to: 256'b0000000000000000000000000000000001000100101000100000000000000000000000000000000000000000000000000100010010100001000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000000011000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 256'b0000000000000000000000000000000001000100101000101111111111111111000000000000000000000000000000000100010010100001111111111111111100000000000000000000000000000000010001001010000011111111111111110000000000000000000000000000000001000000011000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 5'b01111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
@@ -829,8 +833,8 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (93#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (94#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (95#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (96#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010001001010000000000000000000 
@@ -838,7 +842,7 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (94#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (96#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010001001010000100000000000000 
@@ -846,8 +850,16 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (94#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' (95#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (96#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010001001010001000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (96#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' (97#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -863,7 +875,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' [d:
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' (96#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' (98#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_NUM_S bound to: 1 - type: integer 
@@ -872,47 +884,47 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
 	Parameter P_PRIO_MASK bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' (97#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' (99#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter' (98#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter' (100#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' (98#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' (100#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 4 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_RATIO bound to: 5 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (99#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (101#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 1 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (99#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (101#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 4 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_RATIO bound to: 5 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (99#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (101#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' (100#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' (102#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 4 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_RATIO bound to: 5 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (100#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' (101#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (102#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (103#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (104#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:402]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (102#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' (103#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (104#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (105#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (106#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:468]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1790]
 INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
@@ -998,10 +1010,10 @@ INFO: [Synth 8-638] synthesizing module 'pselect_mask' [d:/workplace/AXI/260422_
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (105#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
-INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (106#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
-INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (107#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
-INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (108#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (107#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (108#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (109#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (110#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
 INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89]
 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
@@ -1018,11 +1030,11 @@ INFO: [Synth 8-638] synthesizing module 'lmb_v10' [d:/workplace/AXI/260422_AXI_G
 INFO: [Synth 8-3491] module 'FDS' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847' bound to instance 'POR_FF_I' of component 'FDS' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:171]
 INFO: [Synth 8-6157] synthesizing module 'FDS' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'FDS' (109#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847]
-INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (110#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:141]
-INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (111#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1582]
-WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1582]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (111#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (112#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (113#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1936]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1936]
 INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
@@ -1108,10 +1120,10 @@ INFO: [Synth 8-638] synthesizing module 'pselect_mask__parameterized1' [d:/workp
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'pselect_mask__parameterized1' (111#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
-INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (111#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
-INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (111#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (112#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask__parameterized1' (113#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (113#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (113#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (114#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84]
 INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
@@ -1119,9 +1131,9 @@ INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [d:/workplace/AXI/
 	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'lmb_v10' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:165]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (113#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1628]
-WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1628]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (115#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1982]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1982]
 INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -1199,11 +1211,11 @@ INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [d:/workplace/AXI/
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.388 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'd:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:255]
-INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (124#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
-WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1653]
-WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1653]
-WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1653]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (125#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1436]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (126#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:2007]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:2007]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:2007]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (127#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:1790]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -1258,7 +1270,7 @@ INFO: [Synth 8-638] synthesizing module 'lpf' [d:/workplace/AXI/260422_AXI_GPIO/
 INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
 	Parameter INIT bound to: 16'b0000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'SRL16' (126#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (128#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
 INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
@@ -1278,33 +1290,33 @@ INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_o
 INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (126#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (127#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (128#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (129#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (128#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (129#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (130#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (131#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:391]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:391]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:391]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (132#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (133#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (130#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (131#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (132#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (133#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:457]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:457]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:457]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (134#1) [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (135#1) [D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.274 . Memory (MB): peak = 1490.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.294 . Memory (MB): peak = 1519.578 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 635 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1345,7 +1357,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1490.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1519.578 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 400 instances were transformed.
   FDC_1 => FDCE (inverted pins: C): 1 instance 
@@ -1358,25 +1370,25 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1490.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1519.578 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 52).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 67).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1/inst. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 72).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 80).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 86).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 55).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 70).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1/inst. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 75).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 83).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0/U0. (constraint file  D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/dont_touch.xdc, line 89).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
@@ -1392,12 +1404,13 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_perip
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/GPIO_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/GPIO_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/GPIO_2. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for reset. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for sys_clock. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for usb_uart_rxd. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/TX. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -1410,7 +1423,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1433,7 +1446,7 @@ Detailed RTL Component Info :
 	               43 Bit    Registers := 3     
 	               36 Bit    Registers := 2     
 	               33 Bit    Registers := 2     
-	               32 Bit    Registers := 38    
+	               32 Bit    Registers := 42    
 	               30 Bit    Registers := 1     
 	               16 Bit    Registers := 5     
 	               15 Bit    Registers := 1     
@@ -1441,18 +1454,18 @@ Detailed RTL Component Info :
 	               10 Bit    Registers := 3     
 	                8 Bit    Registers := 4     
 	                6 Bit    Registers := 4     
-	                5 Bit    Registers := 71    
-	                4 Bit    Registers := 15    
-	                3 Bit    Registers := 9     
-	                2 Bit    Registers := 33    
-	                1 Bit    Registers := 613   
+	                5 Bit    Registers := 72    
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 619   
 +---Muxes : 
 	   2 Input   64 Bit        Muxes := 1     
 	   3 Input   43 Bit        Muxes := 1     
 	   2 Input   36 Bit        Muxes := 2     
 	   2 Input   33 Bit        Muxes := 6     
-	   2 Input   32 Bit        Muxes := 19    
-	   4 Input   32 Bit        Muxes := 12    
+	   2 Input   32 Bit        Muxes := 22    
+	   4 Input   32 Bit        Muxes := 16    
 	   2 Input   16 Bit        Muxes := 7     
 	   2 Input   15 Bit        Muxes := 10    
 	   3 Input   14 Bit        Muxes := 1     
@@ -1460,15 +1473,15 @@ Detailed RTL Component Info :
 	   2 Input    8 Bit        Muxes := 11    
 	   4 Input    8 Bit        Muxes := 2     
 	   2 Input    6 Bit        Muxes := 2     
-	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 3     
 	   4 Input    5 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 7     
 	   7 Input    4 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 5     
-	   2 Input    2 Bit        Muxes := 17    
+	   2 Input    2 Bit        Muxes := 18    
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 337   
+	   2 Input    1 Bit        Muxes := 349   
 	  12 Input    1 Bit        Muxes := 1     
 	   4 Input    1 Bit        Muxes := 2     
 	   8 Input    1 Bit        Muxes := 1     
@@ -1491,7 +1504,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -1499,19 +1512,19 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0/U0/Reset' to pin 'design_1_i/rst_clk_wiz_1_100M/U0/FDRE_inst/Q'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1529,37 +1542,76 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[4] with 1st driver pin 'design_1_i/GPIO_0/io_port[4]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[4] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[5] with 1st driver pin 'design_1_i/GPIO_0/io_port[5]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[5] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[6] with 1st driver pin 'design_1_i/GPIO_0/io_port[6]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[6] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[7] with 1st driver pin 'design_1_i/GPIO_0/io_port[7]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[7] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[8] with 1st driver pin 'design_1_i/GPIO_0/io_port[8]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[8] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[9] with 1st driver pin 'design_1_i/GPIO_0/io_port[9]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[9] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[10] with 1st driver pin 'design_1_i/GPIO_0/io_port[10]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[10] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[11] with 1st driver pin 'design_1_i/GPIO_0/io_port[11]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_0_0/synth/design_1_GPIO_0_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[11] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:168]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[4] with 1st driver pin 'design_1_i/GPIO_1/io_port[4]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[4] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[5] with 1st driver pin 'design_1_i/GPIO_1/io_port[5]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[5] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[6] with 1st driver pin 'design_1_i/GPIO_1/io_port[6]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[6] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[7] with 1st driver pin 'design_1_i/GPIO_1/io_port[7]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[7] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[8] with 1st driver pin 'design_1_i/GPIO_1/io_port[8]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[8] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[9] with 1st driver pin 'design_1_i/GPIO_1/io_port[9]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[9] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[10] with 1st driver pin 'design_1_i/GPIO_1/io_port[10]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[10] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[11] with 1st driver pin 'design_1_i/GPIO_1/io_port[11]_INST_0/O' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_GPIO_1_0/synth/design_1_GPIO_1_0.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin io_port[11] with 2nd driver pin 'GND' [d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/synth/design_1.v:191]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       16|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1607,12 +1659,12 @@ Report Cell Usage:
 |1     |AND2B1L    |     1|
 |2     |BSCANE2    |     1|
 |3     |BUFG       |     3|
-|4     |LUT1       |    56|
-|5     |LUT2       |   137|
-|6     |LUT3       |   307|
+|4     |LUT1       |   109|
+|5     |LUT2       |   184|
+|6     |LUT3       |   322|
 |7     |LUT4       |   274|
-|8     |LUT5       |   306|
-|9     |LUT6       |   551|
+|8     |LUT5       |   332|
+|9     |LUT6       |   593|
 |11    |MMCME2_ADV |     1|
 |12    |MULT_AND   |     1|
 |13    |MUXCY_L    |   135|
@@ -1627,43 +1679,44 @@ Report Cell Usage:
 |22    |FDC        |     1|
 |23    |FDPE       |     6|
 |24    |FDR        |    95|
-|25    |FDRE       |  1372|
+|25    |FDRE       |  1510|
 |27    |FDS        |     1|
-|28    |FDSE       |    79|
+|28    |FDSE       |    81|
 |29    |IBUF       |     3|
-|30    |IOBUF      |     8|
+|30    |IOBUF      |    20|
 |31    |OBUF       |     1|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1490.801 ; gain = 385.789
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 1490.801 ; gain = 385.789
+Synthesis finished with 0 errors, 32 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1519.578 ; gain = 410.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1519.578 ; gain = 410.707
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1490.801 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 574 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1519.578 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 586 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1490.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1519.578 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 242 instances were transformed.
+  A total of 254 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 38 instances
   FDC_1 => FDCE (inverted pins: C): 1 instance 
   FDR => FDRE: 95 instances
   FDRE_1 => FDRE (inverted pins: C): 1 instance 
   FDS => FDSE: 1 instance 
-  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 20 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
   MULT_AND => LUT2: 1 instance 
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   SRL16 => SRL16E: 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-266 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+272 Infos, 14 Warnings, 32 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1490.801 ; gain = 385.789
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1519.578 ; gain = 410.707
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 14:36:46 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 27 09:45:35 2026...

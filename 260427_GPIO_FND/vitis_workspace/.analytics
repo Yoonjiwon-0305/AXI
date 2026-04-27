@@ -1,0 +1,23 @@
+timestamp=[2026-04-27 12:16:24], mode=WORKBENCH_START, duration=0:00:04.632, duration_ms=4632, data={}
+timestamp=[2026-04-27 12:16:24], mode=WORKBENCH_UI_INIT, duration=0:00:00.306, duration_ms=306, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2026-04-27 12:16:28], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.281, duration_ms=3281, data={}
+timestamp=[2026-04-27 12:34:00], mode=APP_CREATION, duration=0:00:07.415, duration_ms=7415, data={name=FND_upcounter, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=microblaze_gpio8, application_type=application}
+timestamp=[2026-04-27 12:36:42], mode=PLATFORM_GENERATION, duration=0:00:06.260, duration_ms=6260, data={name=microblaze_gpio8}
+timestamp=[2026-04-27 12:36:44], mode=BUILD, duration=0:00:01.579, duration_ms=1579, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 12:42:44], mode=BUILD, duration=0:00:00.501, duration_ms=501, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 12:44:24], mode=BUILD, duration=0:00:00.496, duration_ms=496, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 12:45:58], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 12:46:25], mode=BUILD, duration=0:00:00.120, duration_ms=120, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 12:47:44], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 12:50:16], mode=BUILD, duration=0:00:00.106, duration_ms=106, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 12:50:49], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 14:06:26], mode=BUILD, duration=0:00:04.239, duration_ms=4239, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 14:06:57], mode=BUILD, duration=0:00:00.794, duration_ms=794, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 14:43:36], mode=BUILD, duration=0:00:02.371, duration_ms=2371, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:39:03], mode=BUILD, duration=0:00:04.306, duration_ms=4306, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:39:56], mode=BUILD, duration=0:00:00.753, duration_ms=753, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:41:34], mode=BUILD, duration=0:00:00.679, duration_ms=679, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:41:54], mode=BUILD, duration=0:00:00.667, duration_ms=667, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:42:24], mode=BUILD, duration=0:00:00.675, duration_ms=675, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 16:17:48], mode=BUILD, duration=0:00:00.742, duration_ms=742, data={name=FND_upcounter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 16:28:08], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=FND_upcounter, configuration=Debug, clean_build=false}

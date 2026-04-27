@@ -134,10 +134,11 @@ vlog -work axi_crossbar_v2_1_23  "+incdir+../../../../260422_AXI_GPIO.gen/source
 
 vlog -work xil_defaultlib  "+incdir+../../../../260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/d0f7" "+incdir+../../../../260422_AXI_GPIO.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
-"../../../bd/design_1/ipshared/4961/hdl/GPIO_v1_0_S00_AXI.v" \
-"../../../bd/design_1/ipshared/4961/hdl/GPIO_v1_0.v" \
+"../../../bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0.v" \
 "../../../bd/design_1/ip/design_1_GPIO_0_0/sim/design_1_GPIO_0_0.v" \
 "../../../bd/design_1/ip/design_1_GPIO_1_0/sim/design_1_GPIO_1_0.v" \
+"../../../bd/design_1/ip/design_1_GPIO_2_0/sim/design_1_GPIO_2_0.v" \
 "../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \

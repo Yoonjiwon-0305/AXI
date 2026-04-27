@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "sleep.h"
+
+// GPIO_0 (LED/FND 출력)
+#define GPIOA_CR  (*(volatile uint32_t *)(XPAR_GPIO_0_S00_AXI_BASEADDR + 0x00))
+#define GPIOA_IDR (*(volatile uint32_t *)(XPAR_GPIO_0_S00_AXI_BASEADDR + 0x04))
+#define GPIOA_ODR (*(volatile uint32_t *)(XPAR_GPIO_0_S00_AXI_BASEADDR + 0x08))
+
+// GPIO_1 (SW 입력)
+#define GPIOB_CR  (*(volatile uint32_t *)(XPAR_GPIO_1_S00_AXI_BASEADDR + 0x00))
+#define GPIOB_IDR (*(volatile uint32_t *)(XPAR_GPIO_1_S00_AXI_BASEADDR + 0x04))
+#define GPIOB_ODR (*(volatile uint32_t *)(XPAR_GPIO_1_S00_AXI_BASEADDR + 0x08))
+
+// FND 세그먼트 테이블 (공통 캐소드)
+const uint8_t fnd_seg[10] = {
+    0x3F, // 0
+    0x06, // 1
+    0x5B, // 2
+    0x4F, // 3
+    0x66, // 4
+    0x6D, // 5
+    0x7D, // 6
+    0x07, // 7
+    0x7F, // 8
+    0x6F  // 9
+};
+
+// 자릿수 선택 (active low)
+const uint8_t fnd_an[4] = {
+    0xE, // 1110 → 1의 자리
+    0xD, // 1101 → 10의 자리
+    0xB, // 1011 → 100의 자리
+    0x7  // 0111 → 1000의 자리
+};
+
+void fnd_display(uint32_t value) {
+    uint8_t digit[4];
+    digit[0] = value % 10;
+    digit[1] = (value / 10)   % 10;
+    digit[2] = (value / 100)  % 10;
+    digit[3] = (value / 1000) % 10;
+
+    for (int i = 0; i < 4; i++) {
+        uint32_t odr_val = (fnd_an[i] << 8) | fnd_seg[digit[i]];
+        GPIOA_ODR = odr_val;
+        usleep(5000);  // 5ms
+    }
+}
+
+int main() {
+    init_platform();
+
+    // GPIO_0: output (FND)
+    GPIOA_CR =0xFFFFFFFF;
+
+    // GPIO_1: input (SW)
+    GPIOB_CR = 0x00;
+
+    uint32_t counter  = 0;
+    uint32_t sw_prev  = 0;
+    uint8_t  running  = 0;
+    uint32_t loop_cnt = 0;
+
+    while (1) {
+        // 스위치 읽기
+        uint32_t sw_val  = GPIOB_IDR & 0xF;
+        uint32_t sw_edge = sw_val & ~sw_prev;
+
+        if (sw_edge & 0x1) {       // sw[0]: RUN
+            running = 1;
+            xil_printf("RUN\r\n");
+        }
+        if (sw_edge & 0x2) {       // sw[1]: STOP
+            running = 0;
+            xil_printf("STOP: %d\r\n", counter);
+        }
+        if (sw_edge & 0x4) {       // sw[2]: CLEAR
+            counter = 0;
+            running = 0;
+            xil_printf("CLEAR\r\n");
+        }
+
+        sw_prev = sw_val;
+
+        // FND 표시 (20ms)
+        fnd_display(counter);
+
+        // 카운터 증가 (100ms마다)
+        if (running) {
+            loop_cnt++;
+            if (loop_cnt >= 5) {
+                loop_cnt = 0;
+                counter++;
+                if (counter > 9999) counter = 0;
+                xil_printf("counter = %d\r\n", counter);
+            }
+        }
+    }
+
+    cleanup_platform();
+    return 0;
+}

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:GPIO:1.0
-// IP Revision: 4
+// IP Revision: 6
 
 `timescale 1ns/1ps
 
@@ -78,7 +78,7 @@ module design_1_GPIO_1_0 (
   s00_axi_rready
 );
 
-inout wire [3 : 0] io_port;
+inout wire [11 : 0] io_port;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *)
 input wire s00_axi_aclk;

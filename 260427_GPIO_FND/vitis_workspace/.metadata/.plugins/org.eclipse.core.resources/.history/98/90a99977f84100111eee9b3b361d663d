@@ -1,0 +1,22 @@
+#include <stdint.h>
+#include "xparameters.h"
+#include "sleep.h"
+#include "xil_printf.h"
+
+#define GPIOA_BASE_ADDR 0x44A00000
+#define GPIOB_BASE_ADDR 0x44A10000
+
+#define GPIOA_CR  (*(uint32_t *)(GPIOA_BASE_ADDR+ 0x00))
+#define GPIOA_IDR (*(uint32_t *)(GPIOA_BASE_ADDR+ 0x00))
+#define GPIOA_ODR (*(uint32_t *)(GPIOA_BASE_ADDR + 0x00))
+
+#define GPIOB_CR  (*(uint32_t *)(GPIOB_BASE_ADDR + 0x00))
+#define GPIOB_IDR (*(uint32_t *)(GPIOB_BASE_ADDR + 0x00))
+#define GPIOB_ODR (*(uint32_t *)(GPIOB_BASE_ADDR + 0x00))
+
+int main()
+{
+	f
+	return 0;
+}
+

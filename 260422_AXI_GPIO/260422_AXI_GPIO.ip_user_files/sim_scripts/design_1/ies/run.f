@@ -91,10 +91,11 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
-  "../../../bd/design_1/ipshared/4961/hdl/GPIO_v1_0_S00_AXI.v" \
-  "../../../bd/design_1/ipshared/4961/hdl/GPIO_v1_0.v" \
+  "../../../bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0_S00_AXI.v" \
+  "../../../bd/design_1/ipshared/0b6d/hdl/GPIO_v1_0.v" \
   "../../../bd/design_1/ip/design_1_GPIO_0_0/sim/design_1_GPIO_0_0.v" \
   "../../../bd/design_1/ip/design_1_GPIO_1_0/sim/design_1_GPIO_1_0.v" \
+  "../../../bd/design_1/ip/design_1_GPIO_2_0/sim/design_1_GPIO_2_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

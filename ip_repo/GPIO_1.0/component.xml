@@ -199,7 +199,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>00c218ba</spirit:value>
+            <spirit:value>e984e3d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>00c218ba</spirit:value>
+            <spirit:value>e984e3d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -296,7 +296,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>70a50372</spirit:value>
+            <spirit:value>459587e6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -335,7 +335,7 @@
         <spirit:wire>
           <spirit:direction>inout</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:left spirit:format="long">11</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -678,7 +678,7 @@
       <spirit:enumeration>32</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_74b5137e</spirit:name>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
@@ -698,7 +698,7 @@
       <spirit:file>
         <spirit:name>hdl/GPIO_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_63be9363</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_75a849ec</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -827,8 +827,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>GPIO_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-04-22T03:56:10Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-04-27T00:26:53Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7731539d_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@79f40888_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
@@ -876,13 +876,24 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@45847c97_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3b2c41ed_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@595d9981_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c2171c8_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d9541b_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b2d0092_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a122cdb_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14e77004_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@593ba595_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@511549dc_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3521447c_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17bee8d5_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b1022b2_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6024ece4_ARCHIVE_LOCATION">d:/workplace/AXI/ip_repo/GPIO_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a6aebf4"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="23f793bd"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8c969006"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="d8c3fdf6"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2e269025"/>

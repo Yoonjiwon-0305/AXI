@@ -70,10 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -93,7 +89,7 @@ set_property ip_output_repo d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.cac
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+read_verilog -library xil_defaultlib D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files D:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/workplace/AXI/260422_AXI_GPIO/260422_AXI_GPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc]
