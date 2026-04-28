@@ -1,0 +1,72 @@
+#include "Watch.h"
+
+watch_time_t watchTime = {0, 0, 0, 0};
+
+static uint8_t  dotState    = 0;
+static uint32_t prevDotTime = 0;
+
+void Watch_Init()
+{
+    FND_Init();
+    watchTime.msec = 0;
+    watchTime.sec  = 0;
+    watchTime.min  = 0;
+    watchTime.hour = 0;
+}
+
+void Watch_Excute()
+{
+    Watch_DispLoop();
+    Watch_Run();
+}
+
+void Watch_DispLoop()
+{
+    // 500ms마다 dot 토글
+    if(millis() - prevDotTime >= 500){
+        dotState    = !dotState;
+        prevDotTime = millis();
+    }
+
+    // mm:ss → FND 숫자 변환
+    FND_SetNum(watchTime.min * 100 + watchTime.sec);
+
+    // dot 깜빡임
+    if(dotState)
+        FND_DispDigit(0x02);  // dot ON
+    else
+        FND_DispDigit(0x00);  // dot OFF
+}
+
+void Watch_Run()
+{
+    static uint32_t prevTimeMsec = 0;
+
+    // 1ms마다 msec 증가
+    if(millis() - prevTimeMsec < 1) return;
+    prevTimeMsec = millis();
+
+    // 밀리초 증가
+    watchTime.msec++;
+    if(watchTime.msec >= 1000){
+        watchTime.msec = 0;
+
+        // 초 증가
+        watchTime.sec++;
+        if(watchTime.sec >= 60){
+            watchTime.sec = 0;
+
+            // 분 증가
+            watchTime.min++;
+            if(watchTime.min >= 60){
+                watchTime.min = 0;
+
+                // 시 증가
+                watchTime.hour++;
+                if(watchTime.hour >= 24){
+                    watchTime.hour = 0;
+                }
+            }
+        }
+    }
+}

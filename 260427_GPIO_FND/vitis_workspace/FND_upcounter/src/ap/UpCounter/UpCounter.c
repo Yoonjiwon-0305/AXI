@@ -49,7 +49,7 @@ void UpCounter_Excute()
 
 void UpCounter_DispLoop()
 {
-	FND_DispDigit();
+	FND_DispDigit(0);
 }
 
 void UpCounter_Run()

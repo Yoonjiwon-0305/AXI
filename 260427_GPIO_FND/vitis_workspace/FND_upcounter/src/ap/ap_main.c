@@ -1,21 +1,43 @@
-#include  "ap_main.h"
-#include  "../driver/FND/FND.h"
-#include  "../common/common.h"
+#include "ap_main.h"
 #include "UpCounter/UpCounter.h"
+#include "Watch/Watch.h"
+
+
+hBtn_t hBtnMode;
 
 void ap_init()
 {
-	UpCounter_Init();
+    Button_Init(&hBtnMode, GPIOA, GPIO_PIN_5);
+    UpCounter_Init();
+    Watch_Init();
 }
 
-void ap_excute()
+void ap_excute()   // while(1) 제거
 {
-	while(1)
-	{
-		UpCounter_Excute();
+    static app_mode_t appMode = MODE_UPCOUNTER;
 
-		millis_inc();
-		delay_ms(1);
+    // 모드 전환 버튼 체크
+    if(Button_GetState(&hBtnMode) == ACT_PUSHED){
+        if(appMode == MODE_UPCOUNTER)
+            appMode = MODE_WATCH;
+        else
+            appMode = MODE_UPCOUNTER;
+    }
 
-	}
+    // 모드에 따라 실행
+    switch(appMode)
+    {
+    case MODE_UPCOUNTER:
+        UpCounter_Excute();
+        break;
+    case MODE_WATCH:
+        Watch_Excute();
+        break;
+    default:
+        UpCounter_Excute();
+        break;
+    }
+
+    millis_inc();
+    delay_ms(1);
 }
