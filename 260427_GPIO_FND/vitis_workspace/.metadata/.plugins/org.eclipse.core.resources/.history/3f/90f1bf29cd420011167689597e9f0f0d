@@ -1,0 +1,17 @@
+
+
+#ifndef SRC_AP_UPCOUNTER_UPCOUNTER_H_
+#define SRC_AP_UPCOUNTER_UPCOUNTER_H_
+#include "../../driver/FND/FND.h"
+#include "../../common/common.h"
+
+void Button_Init(hBtn_t *hbtn,GPIO_Typedef_t *GPIOx,uint32_t GPIO_Pin);
+button_act_t Button_GetState(hBtn_t *hbtn);
+void UpCounter_Init();
+void UpCounter_Excute();
+void UpCounter_DispLoop();
+void UpCounter_Run();
+void UpCounter_Stop();
+void UpCounter_Clear();
+
+#endif

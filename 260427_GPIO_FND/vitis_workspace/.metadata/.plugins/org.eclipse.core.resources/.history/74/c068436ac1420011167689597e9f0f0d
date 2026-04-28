@@ -1,0 +1,34 @@
+#include "UpCounter.h"
+
+uint16_t counter = 0;
+
+void UpCounter_Init()
+{
+	FND_Init();
+	counter = 0;
+}
+
+void UpCounter_Excute()
+{
+	void UpCounter_DispLoop();
+	void UpCounter_Run();
+}
+
+void UpCounter_DispLoop()
+{
+	FND_DispDigit();
+}
+
+
+void UpCounter_Run()
+{
+	static uint32_t prevTimeCounter = 0;
+
+	if(millis() - prevTimeCounter < 100-1)
+				{
+					return;
+				}
+				prevTimeCounter = millis();
+
+				FND_SetNum(counter++);
+}

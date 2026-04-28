@@ -1,0 +1,11 @@
+#include  "ap_main.h"
+
+void ap_init()
+{
+	FND_Init();
+}
+
+void ap_excute()
+{
+
+}
