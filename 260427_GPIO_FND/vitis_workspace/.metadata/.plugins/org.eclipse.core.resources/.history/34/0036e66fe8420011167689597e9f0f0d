@@ -1,0 +1,52 @@
+/*
+ * watch_stopwatch.c
+ *
+ *  Created on: 2026. 4. 28.
+ *      Author: kccistc
+ */
+
+
+#include  "ap_main.h"
+#include  "../driver/FND/FND.h"
+#include  "../common/common.h"
+#include "UpCounter/UpCounter.h"
+
+hBtn_t hBtnmode;
+
+void ap_init()
+{
+	UpCounter_Init();
+
+}
+
+void ap_excute()
+{
+	while(1)
+	{
+
+		  switch (upCounterState)
+			 {
+			 case UpCounter:
+				 UpCounter_Excute();
+				 if(Button_GetState(&hBtnRunStop)== ACT_PUSHED){
+					 upCounterState = RUN;
+				 }else if(Button_GetState(&hBtnClear)== ACT_PUSHED){
+					 	 upCounterState = CLEAR;
+				 }
+				break;
+			 case Watch:
+				 Watch_Excute();
+				 if(Button_GetState(&hBtnRunStop)== ACT_PUSHED){
+				 	upCounterState = STOP;
+				 }else if(Button_GetState(&hBtnClear)==ACT_PUSHED){
+					 upCounterState = STOP;
+				 }
+			 	break;
+			 }
+		UpCounter_Excute();
+
+		millis_inc();
+		delay_ms(1);
+
+	}
+}

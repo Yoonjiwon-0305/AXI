@@ -1,0 +1,11 @@
+#include "ap/ap_main.h"
+
+int main()
+{
+    ap_init();
+    while(1)
+    {
+        ap_excute();  // ✅ main이 루프 관리
+    }
+    return 0;
+}

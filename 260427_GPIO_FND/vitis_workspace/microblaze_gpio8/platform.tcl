@@ -18,3 +18,4 @@ platform generate -domains
 platform active {microblaze_gpio8}
 platform generate -quick
 platform generate
+platform generate -domains standalone_microblaze_0 

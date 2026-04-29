@@ -1,0 +1,40 @@
+#include  "watch.h"
+#include "sleep.h"
+
+uint8_t watch_mm = 0;
+uint8_t watch_ss = 0;
+hBtn_t   hBtnWatch;
+
+void Watch_Init()
+{
+	FND_Init();
+	watch_mm = 0;
+	watch_ss = 0;
+}
+
+void Watch_Excute()
+{
+	Watch_DispLoop();
+	Watch_Run();
+}
+
+void Watch_DispLoop()
+{
+	FND_DispDigit();
+}
+
+void Watch_Run()
+{
+    static uint32_t prevTimeSec = 0;
+    if(millis() - prevTimeSec < 999) return;
+    prevTimeSec = millis();
+
+    watch_ss++;
+    if(watch_ss >= 60){
+        watch_ss = 0;
+        watch_mm++;
+        if(watch_mm >= 100){
+            watch_mm = 0;
+        }
+    }
+}
