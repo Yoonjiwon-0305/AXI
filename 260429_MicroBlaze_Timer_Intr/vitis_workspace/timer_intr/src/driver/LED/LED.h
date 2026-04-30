@@ -8,6 +8,33 @@
 #ifndef SRC_DRIVER_LED_LED_H_
 #define SRC_DRIVER_LED_LED_H_
 
+#include <stdint.h>
+#include "../../HAL/GPIO/GPIO.h"
+#include "../../common/common.h"
+
+typedef enum {
+    LED_MODE_HOUR_MIN,
+    LED_MODE_SEC_MSEC
+} ledTimeMode_t;
+
+#define LED_PIN_0	GPIO_PIN_0
+#define LED_PIN_1	GPIO_PIN_1
+#define LED_PIN_2	GPIO_PIN_2
+#define LED_PIN_3	GPIO_PIN_3
+#define LED_PIN_4	GPIO_PIN_4
+#define LED_PIN_5	GPIO_PIN_5
+#define LED_PIN_6	GPIO_PIN_6
+#define LED_PIN_7	GPIO_PIN_7
+#define LED_PORT	GPIOC
+
+#define LED_ON	1
+#define LED_OFF	0
+
+void LED_Init();
+void LED_SetPin(uint8_t pin, uint8_t on_off);
+void LED_WritePort(uint8_t data);
+void LED_UpCounter_Excute();
+void LED_TimeClock_Excute(ledTimeMode_t timeMode);
 
 
 #endif /* SRC_DRIVER_LED_LED_H_ */

@@ -6,6 +6,7 @@
 #include "TimeClock/TimeClock.h"
 #include  "intrrupt.h"
 #include "../driver/Button/Button.h"
+#include "../driver/LED/LED.h"
 
 typedef enum {
 	MODE_UPCOUNTER, MODE_TIMECLOCK
@@ -16,6 +17,7 @@ hBtn_t hBtnMode;
 void ap_init() {
 	UpCounter_Init();
 	TimeClock_Init();
+	LED_Init();
 	SetupInterruptSystem();
 
 	Button_Init(&hBtnMode, GPIOA, GPIO_PIN_5);

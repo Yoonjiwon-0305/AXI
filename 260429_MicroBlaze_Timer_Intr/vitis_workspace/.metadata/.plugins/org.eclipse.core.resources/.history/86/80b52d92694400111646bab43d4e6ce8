@@ -1,0 +1,70 @@
+/*
+ * LED.c
+ *
+ *  Created on: 2026. 4. 30.
+ *      Author: kccistc
+ */
+#include "LED.h"
+#include "../../ap/TimeClock/TimeClock.h"
+
+static uint8_t ledData = 0;
+
+void LED_Init() {
+	// GPIOC 전체 OUTPUT 설정
+	GPIO_SetMode(GPIOC,
+			LED_PIN_0 | LED_PIN_1 | LED_PIN_2 | LED_PIN_3 | LED_PIN_4
+					| LED_PIN_5 | LED_PIN_6 | LED_PIN_7, OUTPUT);
+	ledData = 0;
+	GPIO_WritePort(GPIOC, ledData);
+}
+
+void LED_SetPin(uint8_t pin, uint8_t on_off) {
+	// GPIO_WritePin 이용
+	if (on_off == LED_ON) {
+		ledData |= pin;
+	} else {
+		ledData &= ~pin;
+	}
+	GPIO_WritePort(GPIOC, ledData);
+}
+
+void LED_WritePort(uint8_t data) {
+	// GPIO_WritePort 이용
+	ledData = (ledData & 0xF0) | (data & 0x0F);
+	GPIO_WritePort(GPIOC, ledData);
+}
+
+void LED_UpCounter_Excute() {
+	// 상위 4개: PIN7 ON, PIN6 OFF
+	// 하위 4개: 0.1초마다 left shift
+	LED_SetPin(LED_PIN_7, LED_ON);
+	LED_SetPin(LED_PIN_6, LED_OFF);
+	LED_SetPin(LED_PIN_5, LED_OFF);
+	LED_SetPin(LED_PIN_4, LED_OFF);
+
+	static uint8_t shiftData = 0x08;
+	static uint32_t prevTime = 0;
+
+	if (millis() - prevTime >= 100) {   // 100ms마다
+		prevTime = millis();
+		shiftData = ((shiftData >> 1) | (shiftData << 3)) & 0x0F;
+		LED_WritePort(shiftData);
+	}
+}
+
+void LED_TimeClock_Excute(uint8_t timeState) {
+	LED_SetPin(LED_PIN_7, LED_OFF);
+	LED_SetPin(LED_PIN_6, LED_ON);
+	LED_SetPin(LED_PIN_5, timeState == HOUR_MIN ? LED_ON : LED_OFF);
+	LED_SetPin(LED_PIN_4, timeState == SEC_MSEC ? LED_ON : LED_OFF);
+
+	static uint8_t shiftData = 0x01;
+	static uint32_t prevTime = 0;
+
+	if (millis() - prevTime >= 500) {
+		prevTime = millis();
+		shiftData = ((shiftData << 1) | (shiftData >> 3)) & 0x0F;
+		LED_WritePort(shiftData);
+	}
+}
+

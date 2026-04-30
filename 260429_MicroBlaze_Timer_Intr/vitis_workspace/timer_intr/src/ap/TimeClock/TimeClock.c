@@ -5,6 +5,7 @@
  *      Author: kccistc
  */
 #include "TimeClock.h"
+#include "../../driver/LED/LED.h"
 
 timeState_t timeState = HOUR_MIN;
 timeClock_t timeClock;
@@ -24,6 +25,8 @@ void TimeClock_SetTime(uint8_t hh, uint8_t mm, uint8_t ss, uint8_t ms) {
 
 void TimeClock_Excute() {
 	TimeClock_DispTime();
+	LED_TimeClock_Excute(timeState == HOUR_MIN ?
+	    LED_MODE_HOUR_MIN : LED_MODE_SEC_MSEC);
 }
 
 void TimeClock_IncTime() {
