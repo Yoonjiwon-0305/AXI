@@ -6,8 +6,10 @@
  */
 #include "TMR.h"
 
-
-
+uint32_t TMR_GetCNT(TMR_typedef_t *TMRx)
+{
+	return TMRx ->CNT;
+}
 void TMR_SetPSC (TMR_typedef_t *TMRx, uint32_t psc)
 {
 	TMRx->PSC = psc;

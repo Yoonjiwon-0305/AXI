@@ -11,6 +11,9 @@
 #include  "xparameters.h"
 #include  "xintc.h"
 #include  "xil_exception.h"
+#include  "../common/common.h"
+#include  "UpCounter/UpCounter.h"
+#include  "TimeClock/TimeClock.h"
 
 #define  INTC_DEV_ID    XPAR_INTC_0_DEVICE_ID
 #define  TMR1_DEV_ID    XPAR_TMR_1_DEVICE_ID

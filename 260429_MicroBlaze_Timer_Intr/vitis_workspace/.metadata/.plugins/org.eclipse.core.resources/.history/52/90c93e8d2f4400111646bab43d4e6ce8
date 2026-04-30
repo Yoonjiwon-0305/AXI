@@ -1,0 +1,48 @@
+#include  "xparameters.h"
+#include  "xintc.h"
+#include  "xil_exception.h"
+#include  "xil_printf.h"
+
+#include  "ap_main.h"
+#include  "../driver/FND/FND.h"
+#include  "../common/common.h"
+#include "UpCounter/UpCounter.h"
+#include "../HAL/TMR/TMR.h"
+#include  "intrrupt.h"
+
+void ap_init()
+{
+	UpCounter_Init();
+	SetupInterruptSystem();
+
+	// 1khz -> 1ms 간격으로 count 발생 // d인터럽트 발생 안됌
+	TMR_SetPSC(TMR0, 100-1);
+	TMR_SetARR(TMR0, 1000 -1);
+	TMR_StopIntr(TMR0);
+	TMR_StartTimer(TMR0);
+
+	// 1khz -> 1ms 간격으로 interrupt 발생
+	TMR_SetPSC(TMR1, 100-1);
+	TMR_SetARR(TMR1, 1000 -1);
+	TMR_StartIntr(TMR1);
+	TMR_StartTimer(TMR1);
+
+	// 10khz -> 0.1ms 간격으로 interrupt 발생
+	TMR_SetPSC(TMR2, 100-1);
+	TMR_SetARR(TMR2, 100-1);
+	TMR_StartIntr(TMR2);
+	TMR_StartTimer(TMR2);
+
+}
+
+void ap_excute()
+{
+	while(1)
+	{
+		UpCounter_Excute();
+
+		millis_inc();
+		delay_ms(1);
+
+	}
+}

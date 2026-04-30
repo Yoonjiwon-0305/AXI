@@ -15,8 +15,6 @@ void UpCounter_Init()
 
 void UpCounter_Excute()
 {
-	 UpCounter_DispLoop();
-
 	  static upcounter_state_t upCounterState = STOP;
 
 	  switch (upCounterState)

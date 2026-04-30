@@ -1,0 +1,65 @@
+#include  "xil_printf.h"
+
+#include  "ap_main.h"
+#include "UpCounter/UpCounter.h"
+#include "../HAL/TMR/TMR.h"
+#include "TimeClock/TimeClock.h"
+#include  "intrrupt.h"
+#include "../driver/Button/Button.h"
+
+typedef enum {
+	MODE_UPCOUNTER, MODE_TIMECLOCK
+} modeState_t;
+
+hBtn_t hBtnMode;
+
+void ap_init() {
+	UpCounter_Init();
+	TimeClock_Init();
+	SetupInterruptSystem();
+
+	Button_Init(&hBtnMode, GPIOA, GPIO_PIN_5);
+
+	// 1Mhz -> 1us 간격으로 count 발생 // 인터럽트 발생 안됌
+	TMR_SetPSC(TMR0, 100 - 1);
+	TMR_SetARR(TMR0, 0xffffffff); // ARR 에 최대수를 넣었음 // 제한 없이 끝까지 카운팅
+	TMR_StopIntr(TMR0);
+	TMR_StartTimer(TMR0);
+
+	// 1khz -> 1ms 간격으로 interrupt 발생
+	TMR_SetPSC(TMR1, 100 - 1);
+	TMR_SetARR(TMR1, 1000 - 1);
+	TMR_StartIntr(TMR1);
+	TMR_StartTimer(TMR1);
+
+	// 100khz -> 10ms 간격으로 interrupt 발생
+	TMR_SetPSC(TMR2, 100 - 1);
+	TMR_SetARR(TMR2, 10000 - 1);
+	TMR_StartIntr(TMR2);
+	TMR_StartTimer(TMR2);
+}
+
+void ap_excute() {
+	static modeState_t modeState = MODE_UPCOUNTER;
+
+	while (1) {
+		if (Button_GetState(&hBtnMode) == ACT_PUSHED) {
+			if (modeState == MODE_UPCOUNTER)
+				modeState = MODE_TIMECLOCK;
+			else
+				modeState = MODE_UPCOUNTER;
+		}
+
+		switch (modeState) {
+		case MODE_UPCOUNTER:
+			UpCounter_Excute();
+			break;
+		case MODE_TIMECLOCK:
+			TimeClock_Excute();
+			break;
+		default:
+			UpCounter_Excute();
+			break;
+		}
+	}
+}

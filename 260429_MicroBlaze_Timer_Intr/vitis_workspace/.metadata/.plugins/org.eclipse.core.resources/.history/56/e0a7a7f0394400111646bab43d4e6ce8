@@ -1,0 +1,75 @@
+/*
+ * TimeClock.c
+ *
+ *  Created on: 2026. 4. 30.
+ *      Author: kccistc
+ */
+#include "TimeClock.h"
+
+timeClock_t timeClock;
+
+void TimeClock_Init()
+{
+
+}
+
+void TimeClock_Excute()
+{
+	TimeClock_DispTime();
+}
+
+void TimeClock_IncTime()
+{
+	if(timeClock.msec < 100-1){
+		timeClock.msec++;
+		return;
+	}
+	timeClock.msec = 0;
+
+	if(timeClock.sec < 60-1){
+		timeClock.sec++;
+		return;
+	}
+	timeClock.sec =0;
+
+	if(timeClock.min < 60-1){
+		timeClock.min++;
+		return;
+	}
+	timeClock.min =0;
+
+	if(timeClock.hour < 24-1){
+		timeClock.hour++;
+		return;
+	}
+	timeClock.hour =0;
+}
+
+void TimeClock_DispTime()
+{
+	//TimeClock_DispHourMin();
+	TimeClock_DispSecMsec();
+
+	timeClock.hour;
+	timeClock.min;
+	timeClock.sec;
+	timeClock.msec;
+}
+
+void TimeClock_DispHourMin()
+{
+	uint16_t timeNum;
+
+	timeNum = timeClock.hour * 100 + timeClock.min;
+
+	FND_SetNum(timeNum);
+}
+
+void TimeClock_DispSecMsec()
+{
+	uint16_t timeNum;
+
+	timeNum = timeClock.sec * 100 + timeClock.msec;
+
+	FND_SetNum(timeNum);
+}

@@ -18,9 +18,12 @@ typedef struct {
 	uint32_t CNT;
 }TMR_typedef_t;
 
+#define TMR0_BASEADDR   XPAR_TMR_0_S00_AXI_BASEADDR
 #define TMR1_BASEADDR   XPAR_TMR_1_S00_AXI_BASEADDR
 #define TMR2_BASEADDR   XPAR_TMR_2_S00_AXI_BASEADDR
 
+
+#define TMR0  			((TMR_typedef_t *)(TMR0_BASEADDR))
 #define TMR1  			((TMR_typedef_t *)(TMR1_BASEADDR))
 #define TMR2  			((TMR_typedef_t *)(TMR2_BASEADDR))
 
@@ -28,6 +31,7 @@ typedef struct {
 #define TMR_CLEAR_BIT     1
 #define TMR_INTR_BIT      2
 
+uint32_t TMR_GetCNT(TMR_typedef_t *TMRx);
 void TMR_SetPSC (TMR_typedef_t *TMRx, uint32_t psc);
 void TMR_SetARR (TMR_typedef_t *TMRx,uint32_t arr);
 void TMR_StartIntr(TMR_typedef_t *TMRx);

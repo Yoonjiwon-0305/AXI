@@ -4,25 +4,24 @@
  *  Created on: 2026. 4. 29.
  *      Author: kccistc
  */
-#include "xintc.h"
-#include "xparameters.h"
-#include "xil_exception.h"
-#include "xil_printf.h"
 #include "intrrupt.h"
 
 XIntc IntrController;
 
-void TMR1_ISR(void *CallbackRef)
+// 1khz -> 1msec interrupt serivce routine
+void TMR1_ISR(void *CallbackRef)  // 인터럽트가 발생하면 실행되는 함수
 {
-	xil_printf("1sec   TIMER 1 ISR!\n");
+	millis_inc();
+	UpCounter_DispLoop();
 }
 
-void TMR2_ISR(void *CallbackRef)
+// 10msec interrupt serivce routine
+void TMR2_ISR(void *CallbackRef)  // 인터럽트가 발생하면 실행되는 함수
 {
-	xil_printf("2sec             TIMER 2 ISR!\n");
+	TimeClock_IncTime();
 }
 
-int SetupInterruptSystem()
+int SetupInterruptSystem()  // 인터럽트 콘트롤러 설정, microBlaze 인터럽트 설정 절차
 {
 	int status;
 
@@ -31,7 +30,7 @@ int SetupInterruptSystem()
 	if(status != XST_SUCCESS){
 		return XST_FAILURE;
 	}
-	//2-1. TMR1_ISR 함수를 Intc와 연결
+	//2-1. TMR1_ISR 함수를 Intc와 연결 // (void *) 0 => 받는 매개변수가 없는 null 포인터 , 아무의미없는 주소 및 포인터
 	status = XIntc_Connect(&IntrController, TMR1_DEV_ID, (XInterruptHandler)TMR1_ISR, (void *) 0);
 	if(status != XST_SUCCESS){
 			return XST_FAILURE;
@@ -51,7 +50,7 @@ int SetupInterruptSystem()
 	XIntc_Enable(&IntrController, TMR1_DEV_ID);
 	XIntc_Enable(&IntrController, TMR2_DEV_ID);
 
-	//5. MicroBlaze 의 Exception 초기화 및 활성화
+	//5. MicroBlaze 의 Exception 초기화 및 활성화  < 설정  >
 	Xil_ExceptionInit();
 	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
 			(Xil_ExceptionHandler)XIntc_InterruptHandler,
