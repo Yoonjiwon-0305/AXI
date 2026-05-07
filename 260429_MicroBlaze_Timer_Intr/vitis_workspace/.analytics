@@ -94,3 +94,21 @@ timestamp=[2026-04-30 16:51:36], mode=BUILD, duration=0:00:00.580, duration_ms=5
 timestamp=[2026-04-30 16:52:52], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=timer_intr, configuration=Debug, clean_build=false}
 timestamp=[2026-04-30 16:53:30], mode=BUILD, duration=0:00:00.310, duration_ms=310, data={name=timer_intr, configuration=Debug, clean_build=false}
 timestamp=[2026-04-30 16:54:02], mode=BUILD, duration=0:00:02.134, duration_ms=2134, data={name=timer_intr, configuration=Debug, clean_build=false}
+timestamp=[2026-05-03 16:12:23], mode=WORKBENCH_START, duration=0:00:07.178, duration_ms=7178, data={}
+timestamp=[2026-05-03 16:12:24], mode=WORKBENCH_UI_INIT, duration=0:00:00.701, duration_ms=701, data={editors_count=12, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,timer_intr,timer_intr_system}
+timestamp=[2026-05-03 16:12:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.098, duration_ms=98, data={}
+timestamp=[2026-05-06 09:30:47], mode=WORKBENCH_START, duration=0:00:11.562, duration_ms=11562, data={}
+timestamp=[2026-05-06 09:30:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.518, duration_ms=518, data={editors_count=15, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,timer_intr,timer_intr_system}
+timestamp=[2026-05-06 09:30:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.097, duration_ms=97, data={}
+timestamp=[2026-05-06 09:31:02], mode=PLATFORM_GENERATION, duration=0:00:11.622, duration_ms=11622, data={name=design_1_wrapper}
+timestamp=[2026-05-06 09:31:03], mode=BUILD, duration=0:00:00.449, duration_ms=449, data={name=timer_intr, configuration=Debug, clean_build=false}
+timestamp=[2026-05-06 09:32:02], mode=BUILD, duration=0:00:00.264, duration_ms=264, data={name=timer_intr, configuration=Debug, clean_build=false}
+timestamp=[2026-05-06 09:32:34], mode=BUILD, duration=0:00:01.369, duration_ms=1369, data={name=timer_intr, configuration=Debug, clean_build=false}
+timestamp=[2026-05-06 10:48:56], mode=BUILD, duration=0:00:02.240, duration_ms=2240, data={name=timer_intr, configuration=Debug, clean_build=false}
+timestamp=[2026-05-06 10:49:44], mode=BUILD, duration=0:00:00.183, duration_ms=183, data={name=timer_intr, configuration=Debug, clean_build=false}
+timestamp=[2026-05-06 11:50:35], mode=WORKBENCH_START, duration=0:00:09.564, duration_ms=9564, data={}
+timestamp=[2026-05-06 11:50:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.047, duration_ms=47, data={}
+timestamp=[2026-05-06 11:50:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.969, duration_ms=969, data={editors_count=15, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,timer_intr,timer_intr_system}
+timestamp=[2026-05-07 09:58:17], mode=WORKBENCH_START, duration=0:00:07.968, duration_ms=7968, data={}
+timestamp=[2026-05-07 09:58:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.890, duration_ms=890, data={editors_count=15, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,timer_intr,timer_intr_system}
+timestamp=[2026-05-07 09:58:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.062, duration_ms=62, data={}
